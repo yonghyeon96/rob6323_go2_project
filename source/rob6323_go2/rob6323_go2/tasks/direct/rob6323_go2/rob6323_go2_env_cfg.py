@@ -75,7 +75,7 @@ class Rob6323Go2EnvCfg(DirectRLEnvCfg):
     # custom PD gains (applied in env)
     Kp = 28.0
     Kd = 1.0
-    torque_limits = 100.0  # env-side clip (actuator effort_limit still applies)
+    torque_limits = 23.5  # matches actuator effort_limit
 
     # scene
     scene: InteractiveSceneCfg = InteractiveSceneCfg(num_envs=4096, env_spacing=4.0, replicate_physics=True)

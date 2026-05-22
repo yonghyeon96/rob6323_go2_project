@@ -400,6 +400,7 @@ class Rob6323Go2Env(DirectRLEnv):
         self._actions[env_ids] = 0.0
         self._previous_actions[env_ids] = 0.0
         self.last_actions[env_ids] = 0.0
+        self.desired_joint_pos[env_ids] = self.robot.data.default_joint_pos[env_ids]
         self.gait_indices[env_ids] = 0.0
         self.clock_inputs[env_ids] = 0.0
         self.desired_contact_states[env_ids] = 0.0
